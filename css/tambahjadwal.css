@@ -1,0 +1,126 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* BODY BACKGROUND */
+body {
+    background: linear-gradient(180deg, #071b2a, #0b2438);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER */
+.container-form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* TITLE */
+.container-form h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.container-form p {
+    color: #9fb3c8;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* CARD FORM */
+.form-card {
+    background: #0f2a3d;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #173a52;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* LABEL */
+.form-card label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #c7d7e5;
+}
+
+/* INPUT & SELECT */
+.form-card input,
+.form-card select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #1e415c;
+    background-color: #132f45;
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+    border-color: #1e88e5;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.2);
+}
+
+/* BUTTON CONTAINER */
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    flex: 1;
+    background: linear-gradient(90deg, #1e88e5, #1565c0);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #2196f3, #1976d2);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #1a3348;
+    color: #c7d7e5;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #244b69;
+}
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+}

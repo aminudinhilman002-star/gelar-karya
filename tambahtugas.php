@@ -30,9 +30,17 @@
         <label>Deskripsi (Opsional)</label>
         <textarea name="description" rows="4" placeholder="Tambahkan detail tugas..."></textarea>
 
+        <label>Kuadran Tugas</label>
+        <select name="status" required>
+            <option value="1">Kuadran 1 (Penting & Mendesak)</option>
+            <option value="2">Kuadran 2 (Penting & Tidak Mendesak)</option>
+            <option value="3">Kuadran 3 (Tidak Penting & Mendesak)</option>
+            <option value="4">Kuadran 4 (Tidak Penting & Tidak Mendesak)</option>
+        </select>
+
         <div class="form-buttons">
             <button type="submit" class="btn-primary">Simpan Tugas</button>
-            <a href="dashboard.php" class="btn-secondary">Batal</a>
+            <a href="dashboardpribadi.php" class="btn-secondary">Batal</a>
         </div>
 
     </form>

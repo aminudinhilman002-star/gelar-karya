@@ -22,7 +22,7 @@ if(isset($_POST['login'])) {
             $_SESSION['id_user'] = $data['id_user'];
 
             
-            header("Location: dashboard.php");
+            header("Location: dashboardpribadi.php");
             exit();
 
         } else {
